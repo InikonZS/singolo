@@ -2,6 +2,18 @@
     font-family: Lato; /* Гарнитура шрифта */
     src: url(assets/Lato-Regular.ttf); /* Путь к файлу со шрифтом */
    }
+
+.clink{
+    text-decoration: none;
+    display:block;
+    line-height: 21px;
+    font-size: 9pt;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    color:#ffcac8;
+}
 .wrapper{
     display: block;
     max-width: 1020px;
