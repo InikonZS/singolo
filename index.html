@@ -6,53 +6,116 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
+            
         <div class="wrapper clearfix">
+        <a class="anch" name="header"></a>
                 <div class="header main-block clearfix">
+                    
                     <div class="container men">
                         <div class="npad">
                             <h1 class="logo">SINGOLO<span style="color:#f06c64">*</span></h1>    
                         </div>
                         <div class="container_item main-menu">
                             <div class="container_item selm">
-                                HOME
+                                <a href="#header">HOME</a>
                             </div>
                             <div class="container_item selm">
-                                SERVICES
+                                <a href="#services">SERVICES</a>
                             </div>
                             <div class="container_item selm">
-                                PORTFOLIO
+                                <a href="#portfolio">PORTFOLIO</a>
                             </div>
                             <div class="container_item selm">
-                                ABOUT
+                                <a href="#about">ABOUT</a>
                             </div>
                             <div class="container_item selm">
-                                CONTACT
+                                <a href="#contact">CONTACT</a>
                             </div>
                            
                         </div>
                     </div>
                 </div>
-                <div class="slyder main-block clearfix">
-                    <div class="container sld">
-                        <a href="">
+                <div  class="slyder-wrap clearfix">
+                    <img style="z-index:2; position:absolute; top:360px; left:35px" id="slyderLeftButton" class="transparent" src="assets/slider/chev_l.png">
+                    <img style="z-index:2; position:absolute; top:360px; left:969px" id="slyderRightButton" class="transparent" src="assets/slider/chev_r.png">
+                    <div id="slideControl" class="slyder main-block slyder_control clearfix">
+                        <div class="container sld">
+                            
                             <div class="slyder_item">
-                                <img src="assets/slider/chev_l.png">
+                                
                             </div>   
-                        </a> 
-                        <div class="slyder_item">
-                            <img src="assets/slider/phone_v.png">
-                        </div>  
-                        <div class="slyder_item">
-                            <img src="assets/slider/phone_h.png">
-                        </div>  
-                        <a href="">  
-                        <div class="slyder_item">
-                            <img src="assets/slider/chev_r.png">
-                        </div> 
-                        </a>
+                            
+                            <div class="slyder_item">
+                                
+                            </div> 
+                            
+                        </div>
+                    </div>
+                    <div id="slide1" class="slyder main-block slyder_slide1 clearfix">
+                        <div class="container sld">
+                            
+                                <div class="slyder_item">
+                                    <img style="visibility: hidden;" src="assets/slider/chev_l.png">
+                                </div>   
+                            
+                            <div class="slyder_item">
+                                <img class="sw" id="tv1" src="assets/slider/phone_v.png">
+                                <img style="display:none;" class="sw" id="tv1-off" src="assets/slider/phone_v_black.png">
+                            </div>  
+                            <div class="slyder_item">
+                                <img class="sw" id="tv2" src="assets/slider/phone_h.png">
+                                <img style="display:none;" class="sw" id="tv2-off" src="assets/slider/phone_h_black.png">
+                            </div>  
+                            
+                            <div class="slyder_item">
+                                <img style="visibility: hidden;" src="assets/slider/chev_r.png">
+                            </div> 
+                            
+                        </div>
+                    </div>
+                    <div id="slide2" class="slyder main-block slyder_slide2 clearfix">
+                        <div class="container sld">
+                            
+                                <div class="slyder_item">
+                                    <img style="visibility: hidden;" src="assets/slider/chev_l.png">
+                                </div>   
+                            
+                            <div class="slyder_item">
+                                <img src="assets/slider/phone_v.png">
+                            </div>  
+                            <div class="slyder_item">
+                                <img src="assets/slider/phone_h.png">
+                            </div>  
+                            
+                            <div class="slyder_item">
+                                <img style="visibility: hidden;" src="assets/slider/chev_r.png">
+                            </div> 
+                            
+                        </div>
+                    </div>
+                    <div id="slide3" class="slyder main-block slyder_slide3 clearfix">
+                        <div class="container sld">
+                            
+                                <div class="slyder_item">
+                                    <img style="visibility: hidden;" src="assets/slider/chev_l.png">
+                                </div>   
+                            
+                            <div class="slyder_item">
+                                <img src="assets/slider/phone_v.png">
+                            </div>  
+                            <div class="slyder_item">
+                                <img src="assets/slider/phone_h.png">
+                            </div>  
+                            
+                            <div class="slyder_item">
+                                <img style="visibility: hidden;" src="assets/slider/chev_r.png">
+                            </div> 
+                            
+                        </div>
                     </div>
                 </div>
                 <div class="services main-block clearfix">
+                    <a class="anch"  name="services"></a>
                     <h1>Our Services</h1>
                     <p class="big-text">
                         Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, 
@@ -152,26 +215,14 @@
                     </div>
                 </div>
                 <div class="portfolio main-block clearfix">
+                <a class="anch"  name="portfolio"></a>
                     <h1>Portfolio</h1>
                     <p сlass="big-text">
                         Duis mollis, est non commodo luctus, nisi 
                         erat porttitor ligula, eget lacinia odio sem nec elit.
                     </p>
-                    <div class="container sel-menu">
-                        <div class="container_item sel">
-                            All 
-                        </div>
-                        <div class="container_item sel">
-                            Web Design 
-                        </div>
-                        <div class="container_item sel">
-                            Graphic Design
-                        </div>
-                        <div class="container_item sel">
-                            Artwork   
-                        </div>
-                            
-                    </div>
+                    <div id="pfm"></div>
+                    
                     <div class="container ptfl">
                         <div class="container_item col4">
                             <img src="assets/portfolio/i1.png" alt="">
@@ -212,6 +263,7 @@
                     </div>
                 </div>
                 <div class="about main-block clearfix">
+                    <a class="anch"  name="about"></a>
                     <h1>About Us</h1>
                     
                     <p class="big-text">
@@ -267,6 +319,7 @@
                     </div>
                 </div>
                 <div class="contact main-block clearfix">
+                    <a class="anch"  name="contact"></a>
                     <h1>Get a Quote</h1>
                     <p class="big-text">
                         Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, 
@@ -319,6 +372,7 @@
                         </div>
                 </div>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
 

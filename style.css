@@ -2,7 +2,17 @@
     font-family: Lato; /* Гарнитура шрифта */
     src: url(assets/Lato-Regular.ttf); /* Путь к файлу со шрифтом */
    }
-
+.transparent{
+    opacity: 20%;
+    cursor:pointer;
+}
+a{
+    text-decoration: none;
+    color:#ffffff;
+}
+a:hover{
+    color:#f06c64;
+}
 .clink{
     text-decoration: none;
     display:block;
@@ -19,10 +29,9 @@
 }
 .wrapper{
     display: block;
-    max-width: 1020px;
+    width: 1020px;
     margin: 0 auto; 
     font-family: Lato, sans-serif;
-    
     text-align: justify; 
 }
 h1{
@@ -135,8 +144,13 @@ p{
     padding-top: 10px;
     padding-right: 5px;
     padding-left: 5px;
+    height:208px;
 }
+.col4 img:hover{
+    border-style:solid;
+    border-width:6px;
 
+}
 .sel-menu{
     justify-content: flex-start;
     padding: 5px 5px;
@@ -153,7 +167,11 @@ p{
     margin-right: 12px;
     font-size:9pt;
 }
-
+.ci_selected{
+    border-color:#ffffff;
+    color:#ffffff;
+    border-style: solid;
+}
 .sel:hover{
     border-color:#ffffff;
     color:#ffffff;
@@ -177,7 +195,12 @@ p{
 .selm:hover{
     color: #f06c64;
 }
-
+body{
+    margin: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
 .header{
     display:flex;
     align-items: center;
@@ -185,6 +208,15 @@ p{
     border-bottom-color: #323746;
     min-height:89px;
     color: #ffffff; 
+    position: fixed;
+    box-sizing: border-box;
+    width:1020px;
+    z-index:100;
+}
+.slyder-wrap{
+    position: relative;
+    margin:0px;
+    overflow: hidden;   
 }
 .slyder{
     background-color: #f06c64; 
@@ -194,6 +226,49 @@ p{
     display:flex;
     align-items: center;
     height: 594px;
+    padding-top:95px;
+}
+.slyder_control{
+    position: relative;
+    top:0px;
+    z-index:-1;
+    width:950px;
+    background-color: #ffffff00; 
+    border-bottom-color: #ffffff00;
+}
+.slyder_slide1{
+    position: absolute;
+    top:0px;
+    z-index:1;
+   
+    width:950px;
+    background-color: #f06c64; 
+    border-bottom-color: #ea676b;
+}
+.slyder_slide2{
+    position: absolute;
+    top:0px;
+    z-index:1;
+   
+    width:950px;
+    background-color: #6664f0; 
+    border-bottom-color: #7067ea;
+}
+.slyder_slide3{
+    position: absolute;
+    top:0px;
+    z-index:1;
+   
+    width:950px;
+    background-color: #80f064; 
+    border-bottom-color: #72ea67;
+}
+.sw{
+    cursor: pointer;    
+}
+.anch{
+    position: relative;
+    top:-95px;
 }
 .services{
     background-color: #f2f2f2;
