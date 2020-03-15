@@ -167,7 +167,11 @@ p{
     margin-right: 12px;
     font-size:9pt;
 }
-
+.ci_selected{
+    border-color:#ffffff;
+    color:#ffffff;
+    border-style: solid;
+}
 .sel:hover{
     border-color:#ffffff;
     color:#ffffff;

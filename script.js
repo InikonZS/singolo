@@ -1,3 +1,60 @@
+class SelItem {
+    constructor (parentNode, text) {
+        this.el=document.createElement('div');
+        this.tn=document.createTextNode(text);
+        this.el.appendChild(this.tn);
+        parentNode.appendChild(this.el);
+        this.selected=false;
+        this.el.className="container_item sel";
+        this.el.addEventListener('click',()=>{
+            this.selected=!this.selected;
+            if (this.selected) {this.el.className="container_item sel ci_selected";}
+            else{this.el.className="container_item sel";}
+        });
+    }
+}
+
+class SelMenu {
+    constructor (parentNode, items) {
+        this.wrp=document.createElement('div');
+        this.items=[];
+        this.selected=0;
+        for (let i=0; i<items.length; i++){
+            let el=document.createElement('div');
+            let tn=document.createTextNode(items[i]);
+            el.appendChild(tn);
+            parentNode.appendChild(el);
+            el.my_selected=false;
+            el.className="container_item sel";
+            this.items.push(el);
+            this.wrp.appendChild(el);
+        }
+        this.wrp.className="container sel-menu";
+        parentNode.appendChild(this.wrp);
+        
+        this.wrp.addEventListener('click',(e)=>{
+            for (let i=0; i<this.items.length; i++){
+                this.items[i].my_selected=false;
+                //console.log(e);
+                e.target.my_selected=true;
+                if (this.items[i].my_selected) {this.items[i].className="container_item sel ci_selected";}
+                else{this.items[i].className="container_item sel";}
+            }
+            
+        });
+    }
+}
+var pfme=document.getElementById('pfm');
+let menn=new SelMenu(pfme,["All","Web Design","Graphic Design","Artwork"]);
+
+/*var pm=document.getElementById('portfolio_menu');
+var pm_items=[];
+pm_items.push(new SelItem(pm,"All"));
+pm_items.push(new SelItem(pm,"Web Design"));
+pm_items.push(new SelItem(pm,"Graphic Design"));
+pm_items.push(new SelItem(pm,"Artwork"));
+*/
+
 var ton=document.getElementById('tv1');
 var tof=document.getElementById('tv1-off');
 var ts=0;
