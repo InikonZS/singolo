@@ -1,0 +1,95 @@
+.portfolio_describe{
+    padding: 5px 10px;
+}
+.portfolio{
+    display: block;
+}
+.portfolio_wrapper{
+    padding-bottom: 55px;
+    background-color:#2d303a; 
+    border-bottom-color: #323746;
+    color:#666d89;
+}
+.portfolio_menu{
+    display:flex;
+    padding: 0px 10px 10px 10px;
+}
+.portfolio_menu_item{
+    padding:3px 5px;
+    border-radius: 5px;
+    border-color:#666d89;
+    color:#666d89;
+    border-style: dotted;
+    border-width: 1px;
+    margin-right: 12px;
+    font-size:9pt;
+    user-select: none;
+    cursor: pointer;
+}
+.portfolio_menu_item_selected{
+    border-color:#ffffff;
+    border-style: solid;
+    color:#ffffff;
+}
+@media screen and (min-width:1020px){
+    .portfolio_menu_item:hover{
+        border-color:#cccccc;
+        color:#cccccc;    
+    }
+    .portfolio_menu .portfolio_menu_item_selected:hover{
+        border-color:#ffffff;
+        border-style: solid;
+        color:#ffffff;
+    }
+}
+
+.portfolio_grid{
+    align-items: center;
+}
+@media screen and (min-width:1020px){
+    .portfolio_grid_item{
+        width: calc(25% - 20px);
+        padding: 10px;
+    }
+    .portfolio_grid :nth-child(n+13) {
+        display: none;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1019px){
+    .portfolio_grid_item{
+        width: calc(33.3333% - 20px);
+        padding: 10px;
+    }
+    .portfolio_grid :nth-child(n+13) {
+    display: none;
+    }
+}
+@media screen and (max-width:767px){
+    .portfolio_grid_item{
+        width: calc(50% - 20px);
+        padding: 10px;
+    }
+    .portfolio_grid :nth-child(n+9) {
+        display: none;
+    }
+}
+.portfolio_grid img{
+    display:block;
+    width: 100%;
+}
+
+.portfolio_grid img:hover{
+    outline-width: 5px;
+    outline-style: solid;
+    outline-color: #666d89;
+}
+.portfolio_grid_img_selected{
+    outline-width: 5px;
+    outline-style: solid;
+    outline-color: #f06c64;    
+}
+.portfolio_grid .portfolio_grid_img_selected:hover{
+    outline-width: 5px;
+    outline-style: solid;
+    outline-color: #f06c64;    
+}
