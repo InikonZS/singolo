@@ -30,6 +30,15 @@
     .services_grid_item{
         width: calc(100% - 20px);
         padding: 0px 10px;
+        margin-top: 12px;
+        min-height: 80px;
+    }
+    .services_wrapper{
+        padding-bottom: 0px;
+        padding-top: 6px;
+    }
+    .services_grid{
+        padding: 8px 0px 0px 0px;
     }
 }
 .services_item_describe{

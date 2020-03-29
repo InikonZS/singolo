@@ -39,4 +39,15 @@
         width: calc(100% - 20px);
         padding: 10px;
     }
+    .about_wrapper{
+        padding-bottom: 4px;
+        padding-top:16px;
+    }
+    .about_grid{
+        padding: 8px 0px;
+    }
+    .about_item_describe .small-text{
+        padding-bottom: 0px;
+        padding-top: 4px;
+    }
 }
