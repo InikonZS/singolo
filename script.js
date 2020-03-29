@@ -11,6 +11,9 @@ buttonRight.addEventListener("click", buttonClickRight);
 var sliderResize = ()=>{
     slider.style.height=(slider.clientWidth/(1020/600))+'px';
     slideContainers.forEach((it)=>{it.style="transform: scale("+(slider.clientWidth/1020)+");"});
+    if (document.documentElement.clientWidth>768){
+        if (window.burgerShaderClick) {burgerShaderClick();}
+    }
 }
 sliderResize();
 window.onresize=(sliderResize);

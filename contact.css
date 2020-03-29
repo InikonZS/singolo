@@ -168,4 +168,24 @@ form{
     .snd{
         width:100%;
     }
+    .contact_wrapper{
+        padding-bottom: 20px;
+        padding-top: 25px;
+    }
+    .contact_grid{
+        padding: 8px 0px 0px 0px;
+    }
+    .inp{
+        margin: 0px 0px 12px 0px;
+    }
+    .big{
+        height:160px;
+    }
+    .snd{
+        height:51px;
+    }
+    .contact_grid_item .small-text{
+        padding-bottom: 8px;
+        padding-top: 6px;
+    }
 }

@@ -1,6 +1,6 @@
 var burgerButton = document.querySelector("#burger_button");
 var burgerMenu = document.querySelector(".burger_menu");
-var burgerShader = document.querySelector("#md-back");
+var burgerShader = document.querySelector("#bs-back");
 burgerShader.addEventListener("click", burgerShaderClick);
 var menuOpened=0;
 
@@ -8,7 +8,7 @@ function burgerShaderClick(e){
     burgerMenu.style="";
     burgerShader.style="display:none;";
     burgerButton.classList.remove("burger_selected");
-    modButtonClick();
+    //modButtonClick();
     document.querySelector(".logo").style="";
     menuOpened=0;
 }
