@@ -217,12 +217,12 @@
 }
 .slide3{
     position: absolute;
-    border-bottom-color: #67ea9e;
+    border-bottom-color: #accc53;
     background-color:#a7e04b;
 }
 .slide4{
     position: absolute;
-    border-bottom-color: #e8ea67;
+    border-bottom-color: #eac167;
     background-color:#ffd257;
 }
 .button{
@@ -272,6 +272,9 @@
 }
 .slide_container_2{
     justify-content: center;
+}
+.slide_container_4{
+    justify-content: space-around;
 }
 
 .phone{

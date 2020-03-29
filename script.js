@@ -160,7 +160,30 @@ function submitClick() {
     return false;
 }
 
+class Switcher {
+    constructor (onID, offID) {
+        this.on_ = document.getElementById(onID);
+        console.log(this.on_);
+        this.off_ = document.getElementById(offID);
+        this.isOn_ = false;
+        this.on_.addEventListener("click", () => { 
+            this.on_.style = "display:none"; 
+            this.off_.style = ""; 
+            this.isOn_ = false;
+        });
+        this.off_.addEventListener("click", () => { 
+            this.off_.style = "display:none"; 
+            this.on_.style = "";
+            this.isOn_ = true; 
+        });
+    }
+}
 
+var switches = [];
+for (let i = 0; i<6; i++){
+    switches.push(new Switcher('tv'+(i+1), 'tv'+(i+1)+'-off'));
+}
+/*
 var ton = document.getElementById('tv1');
 var tof = document.getElementById('tv1-off');
 var ts = 0;
@@ -172,3 +195,4 @@ var tofh = document.getElementById('tv2-off');
 var tsh = 0;
 tonh.addEventListener("click", () => { tonh.style = "display:none"; tofh.style = ""; });
 tofh.addEventListener("click", () => { tofh.style = "display:none"; tonh.style = ""; });
+*/
